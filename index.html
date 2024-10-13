@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+        <button class="logout-btn" onclick="logout()">Log Out</button>
+    </div>
+
+    <div class="menu" id="menu">
+        <a href="#help">Help</a>
+        <a href="#contact-us">Contact Us</a>
+        <a href="#leave-section">Leave Section</a>
+        <a href="#about-us">About Us</a>
+        <a href="#complain-section">Complain Section</a>
+    </div>
+
+    <div class="alert-box">
+        <p class="alert"></p>
+    </div>
+
+    <div class="form">
+        <h1 class="heading">Login</h1>
+        <input type="email" placeholder="Email" autocomplete="off" class="email" required>
+        <input type="password" placeholder="Password" autocomplete="off" class="password" required>
+
+        <a href="register.html">DON'T HAVE AN ACCOUNT? CREATE ONE!</a>
+        <button class="submit-btn">Log In</button>
+    </div>
+
+    <div class="mentorship-section">
+        <div class="mentorship-box">
+            <h2>Student 1</h2>
+            <p>Mentored by Counselor A</p>
+        </div>
+        <div class="mentorship-box">
+            <h2>Student 2</h2>
+            <p>Mentored by Counselor B</p>
+        </div>
+        <div class="mentorship-box">
+            <h2>Student 3</h2>
+            <p>Mentored by Counselor C</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('open');
+        }
+
+        function logout() {
+            // Add logout functionality here
+            alert('Logging out...');
+        }
+    </script>
+</body>
+</html>
